@@ -1,0 +1,10 @@
+/* Стилизация заголовков секций */
+.section-title {
+    margin-bottom: 50px;
+    color: var(--extra-text-color);
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: var(--letter-spacing-base);
+    font-weight: var(--font-weight);
+    text-align: center;
+}

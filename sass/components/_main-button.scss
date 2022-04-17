@@ -1,0 +1,30 @@
+/* Стилизация главной кнопки */
+
+.main-button {
+    transition-property: background-color;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing-function);
+
+    min-width: 200px;
+    padding-top: 10px;
+    padding-right: 32px;
+    padding-bottom: 10px;
+    padding-left: 32px;
+    border-color: transparent;
+    border-radius: 4px;
+
+    color: var(--secondary-text-color);
+    background-color: var(--acent-color);
+
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-weight: var(--font-weight);
+    line-height: 1.88;
+    letter-spacing: var(--letter-spacing);
+    cursor: pointer;
+
+    &:hover {
+        background-color: #188ce8;
+    }
+}
+

@@ -1,0 +1,36 @@
+/* Стилизация списка социальных сетей */
+
+.team-media-list {
+    display: flex;
+    justify-content: center;
+}
+
+.team-media-item:not(:nth-child(4n)) {
+    margin-right: 10px;
+}
+
+.team-media-link {
+    transition-property: color, background-color;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing-function);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    color: var(--team-icon-color);
+    background-color: transparent;
+    border-radius: 50%;
+
+    &:hover,
+    &:focus {
+        background-color: var(--acent-color);
+        color: var(--secondary-text-color);
+    }
+}
+
+.team-media-icon {
+    fill: currentColor;
+}
+

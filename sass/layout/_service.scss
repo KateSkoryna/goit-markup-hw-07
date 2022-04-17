@@ -1,0 +1,42 @@
+/* Стилизация Чем мы занимаемся */
+.service {
+    padding-top: 0;
+}
+
+.service-list {
+    display: flex;
+}
+
+.service-list-item {
+    position: relative;
+
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+.service-header {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    height: 70px;
+    color: var(--secondary-text-color);
+    background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.8),
+            rgba(10, 11, 15, 0.8));
+
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: var(--letter-spacing-base);
+    font-weight: var(--font-weight);
+    text-transform: uppercase;
+    text-align: center;
+}

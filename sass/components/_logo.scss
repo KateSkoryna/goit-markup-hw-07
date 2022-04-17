@@ -1,0 +1,29 @@
+/* Стилизация логотипа в шапке */
+.logo {
+    transition-property: text-decotation;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing-function);
+
+    padding-top: 24px;
+    padding-bottom: 24px;
+    color: var(--acent-color);
+    font-family: var(--second-font);
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: var(--letter-spacing-base);
+    font-weight: var(--font-weight);
+    font-size: 26px;
+    text-decoration: none;
+}
+
+.logo-one {
+    color: #000;
+}
+
+/* Часть логотипа в футере */
+
+.logo-two {
+    margin-bottom: 20px;
+    color: #fff;
+    font-family: var(--second-font);
+}

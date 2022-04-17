@@ -1,0 +1,101 @@
+/* Галерея работ */
+
+.work-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Считаем ширину ячейки через формулу */
+
+.work-list-item {
+    width: calc((100% - 60px) / 3);
+    text-align: left;
+
+    &:not(:nth-last-child(-n + 3)) {
+        margin-bottom: 30px;
+    }
+    
+    &:not(:nth-child(3n)) {
+        margin-right: 30px;
+    }
+}
+
+.work-list-thumb {
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    transform: translatey(101%);
+
+    transition-property: transform;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing-function);
+
+    max-width: 100%;
+    height: 100%;
+    padding-top: 63px;
+    padding-right: 24px;
+    padding-bottom: 63px;
+    padding-left: 24px;
+
+    background-color: rgba(33, 150, 243, 0.9);
+
+    .work-list-link:hover &,
+    .work-list-link:focus & {
+        transform: translatey(0);
+    }
+
+    &.text {
+        color: var(--secondary-text-color);
+        font-size: 18px;
+        line-height: 1.56;
+        letter-spacing: var(--letter-spacing-base);
+        text-align: left;
+    }
+}
+
+.work-list-link {
+    transition-property: box-shadow;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing-function);
+
+    display: block;
+
+    &:hover,
+    &:focus {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+            1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+}
+
+/* Содержімое ячейки */
+
+.work-list-discription {
+    padding-top: 20px;
+    padding-right: 24px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    border: 1px solid #eeeeee;
+    border-top: none;
+}
+
+.work-list-title {
+    margin-bottom: 4px;
+    color: var(--extra-text-color);
+    font-size: 18px;
+    font-weight: var(--font-weight);
+    letter-spacing: var(--letter-spacing);
+    line-height: 2;
+}
+
+.work-list-text {
+    color: var(--text-color);
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: var(--letter-spacing-base);
+}

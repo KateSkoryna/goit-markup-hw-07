@@ -1,0 +1,193 @@
+// Стилизация формы в модальном окне 
+
+.main-form-title {
+    display: block;
+    margin-bottom: 12px;
+    color: var(--extra-text-color);
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: var(--font-weight);
+    letter-spacing: var(--letter-spacing-base);
+    line-height: 1.15;
+}
+
+.main-form-list {
+    margin-bottom: 20px;
+}
+
+.main-form-list-item {
+    position: relative;
+
+    transition-property: border-color, color;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing-function);
+
+    display: flex;
+    flex-direction: column;
+    color: #000;
+
+    &:not(:last-child) {
+        margin-bottom: 10px;
+    }
+
+    &:hover,
+    &:focus-within {
+        color: var(--acent-color);
+        border-color: var(--acent-color);
+    
+    }
+}
+
+.main-form-icon {
+    position: absolute;
+    left: 12px;
+    bottom: 12px;
+    fill: currentColor;
+}
+
+.main-form-label {
+    color: var(--text-color);
+    font-family: inherit;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    text-align: left;
+    margin-bottom: 4px;
+}
+
+.main-form-input {
+    transition-property: border-color;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing-function);
+
+    min-height: 40px;
+    padding-top: 12px;
+    padding-right: 12px;
+    padding-bottom: 12px;
+    padding-left: 42px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: none;
+
+    &:hover,
+    &:focus {
+        border-color: var(--acent-color);
+    }
+}
+
+.main-form-comment {
+    transition-property: border-color;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing-function);
+
+    resize: none;
+    padding: 12px 16px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: none;
+
+    &:hover,
+    &:focus {
+        border-color: var(--acent-color);
+    }
+    
+    &::placeholder {
+        color: rgba(117, 117, 117, 0.5);
+    }
+}
+
+.form-policy {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.main-form-policy {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
+    font-family: inherit;
+    line-height: 1.71;
+    letter-spacing: var(--letter-spacing-base);
+
+    &::before {
+        display: inline-block;
+        content: "";
+        width: 16px;
+        height: 16px;
+        background-image: url(../images/on.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+        outline: none;
+        transition: outline 250ms var(--transition-timing-function);
+    }
+
+    .main-form-checkbox:checked+&::before {
+        background-image: url(../images/off.svg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 16px;
+        height: 16px;
+    }
+
+    .main-form-checkbox:hover+&:before,
+    .main-form-checkbox:focus+&:before {
+        outline: 1px solid var(--acent-color);
+    }
+}
+
+.policy-link {
+    transition-property: color;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing-function);
+
+    color: var(--acent-color);
+    font-family: inherit;
+    line-height: 1.71;
+    letter-spacing: var(--letter-spacing-base);
+    text-decoration: underline;
+    outline: none;
+
+    &:focus {
+        color: #188ce8;
+    }
+}
+
+.main-form-btn {
+    transition-property: background-color;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing-function);
+
+    min-width: 200px;
+    padding-top: 10px;
+    padding-right: 55px;
+    padding-bottom: 10px;
+    padding-left: 55px;
+    border-color: transparent;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+
+    color: var(--secondary-text-color);
+    background-color: var(--acent-color);
+
+
+    font-family: Roboto,
+        sans-serif;
+    font-size: 16px;
+    font-weight: var(--font-weight);
+    line-height: 1.88;
+    letter-spacing: var(--letter-spacing);
+    cursor: pointer;
+    outline: none;
+
+    &:hover,
+    &:focus {
+        background-color: #188ce8;
+    }
+}
+
