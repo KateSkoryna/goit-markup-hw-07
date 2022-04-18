@@ -79,6 +79,18 @@ img {
   padding-bottom: 94px;
 }
 
+.social-media__link_team, .social-media__link_footer {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.aside, .close-btn, .social-media__link_team, .social-media__link_footer, .clients__item, .clients__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Стилизация сткрытых елементов */
 .visually-hidden {
   position: absolute;
@@ -203,9 +215,6 @@ img {
 
 /* Стилизация контактов в верхей правой части страницы */
 .aside {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-left: auto;
 }
 
@@ -336,9 +345,6 @@ img {
   transition-property: transform;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-timing-function);
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 30px;
   height: 30px;
   background-color: transparent;
@@ -653,48 +659,48 @@ img {
   line-height: 1.19;
 }
 
-/* Стилизация списка социальных сетей */
-.team-media {
+/* Стилизация списка социальных сетей на странице */
+.social-media {
   display: flex;
   justify-content: center;
 }
 
-.team-media__item:not(:nth-child(4n)) {
+.social-media__item:not(:nth-child(4n)) {
   margin-right: 10px;
 }
 
-.team-media__link {
+.social-media__link_team {
   transition-property: color, background-color;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-timing-function);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  color: var(--team-icon-color);
   background-color: transparent;
+  color: var(--team-icon-color);
 }
 
-.team-media__link:hover, .team-media__link:focus {
+.social-media__link_team:hover, .social-media__link_team:focus {
   background-color: var(--acent-color);
   color: var(--secondary-text-color);
 }
 
-.team-media__icon {
+.social-media__link_footer {
+  transition-property: background-color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
+  color: var(--secondary-text-color);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-media__link_footer:hover, .social-media__link_footer:focus {
+  background-color: var(--acent-color);
+}
+
+.social-media__icon {
   fill: currentColor;
 }
 
 /* Стилизация секции партнеры */
 .clients__list {
   display: flex;
-}
-
-.clients__item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .clients__item:not(:nth-child(6n)) {
@@ -707,9 +713,6 @@ img {
   transition-timing-function: var(--transition-timing-function);
   width: 170px;
   height: 92px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   color: var(--team-icon-color);
@@ -776,7 +779,7 @@ img {
   color: var(--acent-color);
 }
 
-/* Стилизация секции Соцсетей в футере */
+/* Стилизация заголовка в футере */
 .subscribe-title {
   display: block;
   margin-bottom: 20px;
@@ -786,37 +789,6 @@ img {
   line-height: 1.14;
   letter-spacing: var(--letter-spacing-base);
   text-transform: uppercase;
-}
-
-.subscribe-media__list {
-  display: flex;
-}
-
-.subscribe-media__item:not(:nth-child(4n)) {
-  margin-right: 10px;
-}
-
-.subscribe-media__link {
-  transition-property: background-color;
-  transition-duration: var(--transition-duration);
-  transition-timing-function: var(--transition-timing-function);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  color: var(--secondary-text-color);
-  background-color: rgba(255, 255, 255, 0.1);
-}
-
-.subscribe-media__link:hover, .subscribe-media__link:focus {
-  background-color: var(--acent-color);
-}
-
-.subscrbe-media__icon {
-  height: 20px;
-  fill: currentColor;
 }
 
 /* Стилизация формы в футебер */

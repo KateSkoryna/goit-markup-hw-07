@@ -56,7 +56,7 @@
     }
 }
 
-/* Стилизация секции Соцсетей в футере */
+/* Стилизация заголовка в футере */
 
 .subscribe-title {
     display: block;
@@ -67,39 +67,6 @@
     line-height: 1.14;
     letter-spacing: var(--letter-spacing-base);
     text-transform: uppercase;
-}
-
-.subscribe-media__list {
-    display: flex;
-}
-
-.subscribe-media__item:not(:nth-child(4n)) {
-    margin-right: 10px;
-}
-
-.subscribe-media__link {
-    transition-property: background-color;
-    transition-duration: var(--transition-duration);
-    transition-timing-function: var(--transition-timing-function);
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    color: var(--secondary-text-color);
-    background-color: rgba(255, 255, 255, 0.1);
-
-    &:hover,
-    &:focus {
-        background-color: var(--acent-color);
-    }
-}
-
-.subscrbe-media__icon {
-    height: 20px;
-    fill: currentColor;
 }
 
 /* Стилизация формы в футебер */

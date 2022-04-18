@@ -67,9 +67,8 @@
 /* Стилизация контактов в верхей правой части страницы */
 
 .aside {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %flex-center;
+    
     margin-left: auto;
 }
 
