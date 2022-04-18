@@ -7,7 +7,7 @@
     display: flex;
 }
 
-.team-card-item {
+.team-card__item {
     width: calc((100% - 90px) / 3);
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -27,7 +27,7 @@
     padding-left: 32px;
 }
 
-.team-card-header {
+.team-discription__header {
     margin-bottom: 10px;
     color: var(--extra-text-color);
     font-size: 16px;
@@ -36,7 +36,7 @@
     letter-spacing: var(--letter-spacing-base);
 }
 
-.team-card-text {
+.team-discription__text {
     margin-bottom: 16px;
     color: var(--text-color);
     font-size: 16px;

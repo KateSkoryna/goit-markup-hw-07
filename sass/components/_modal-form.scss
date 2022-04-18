@@ -1,6 +1,6 @@
 // Стилизация формы в модальном окне 
 
-.main-form-title {
+.main-form__title {
     display: block;
     margin-bottom: 12px;
     color: var(--extra-text-color);
@@ -11,11 +11,11 @@
     line-height: 1.15;
 }
 
-.main-form-list {
+.main-form__list {
     margin-bottom: 20px;
 }
 
-.main-form-list-item {
+.main-form__item {
     position: relative;
 
     transition-property: border-color, color;
@@ -38,14 +38,14 @@
     }
 }
 
-.main-form-icon {
+.main-form__icon {
     position: absolute;
     left: 12px;
     bottom: 12px;
     fill: currentColor;
 }
 
-.main-form-label {
+.main-form__label {
     color: var(--text-color);
     font-family: inherit;
     font-size: 12px;
@@ -55,7 +55,7 @@
     margin-bottom: 4px;
 }
 
-.main-form-input {
+.main-form__input {
     transition-property: border-color;
     transition-duration: var(--transition-duration);
     transition-timing-function: var(--transition-timing-function);
@@ -75,7 +75,7 @@
     }
 }
 
-.main-form-comment {
+.main-form__comment {
     transition-property: border-color;
     transition-duration: var(--transition-duration);
     transition-timing-function: var(--transition-timing-function);
@@ -101,7 +101,7 @@
     margin-bottom: 30px;
 }
 
-.main-form-policy {
+.main-form__policy {
     display: flex;
     width: 100%;
     justify-content: center;
@@ -140,7 +140,7 @@
     }
 }
 
-.policy-link {
+.form-policy__link {
     transition-property: color;
     transition-duration: var(--transition-duration);
     transition-timing-function: var(--transition-timing-function);
@@ -157,7 +157,7 @@
     }
 }
 
-.main-form-btn {
+.main-form__btn {
     transition-property: background-color;
     transition-duration: var(--transition-duration);
     transition-timing-function: var(--transition-timing-function);

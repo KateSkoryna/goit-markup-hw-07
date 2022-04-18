@@ -6,7 +6,17 @@
     padding-bottom: 60px;
 }
 
+.footer-flex {
+    display: flex;
+    align-items: baseline;
+}
+
 /* Стилизация адреса */
+
+.address-block {
+    flex-grow: 1;
+    margin-right: 70px;
+}
 
 .address {
     margin-top: 20px;
@@ -14,11 +24,11 @@
     line-height: 1.71;
 }
 
-.address-list-item:not(:last-child) {
+.address__item:not(:last-child) {
     margin-bottom: 9px;
 }
 
-.address-link {
+.address__link {
     transition-property: color;
     transition-duration: var(--transition-duration);
     transition-timing-function: var(--transition-timing-function);
@@ -32,7 +42,7 @@
 
 /* Стилизация почты и телефона */
 
-.address-contact {
+.address__contact {
     transition-property: color;
     transition-duration: var(--transition-duration);
     transition-timing-function: var(--transition-timing-function);
@@ -48,16 +58,6 @@
 
 /* Стилизация секции Соцсетей в футере */
 
-.footer-flex {
-    display: flex;
-    align-items: baseline;
-}
-
-.footer-address {
-    flex-grow: 1;
-    margin-right: 70px;
-}
-
 .subscribe-title {
     display: block;
     margin-bottom: 20px;
@@ -69,15 +69,15 @@
     text-transform: uppercase;
 }
 
-.subscribe-list {
+.subscribe-media__list {
     display: flex;
 }
 
-.subscribe-list-item:not(:nth-child(4n)) {
+.subscribe-media__item:not(:nth-child(4n)) {
     margin-right: 10px;
 }
 
-.subscribe-list-link {
+.subscribe-media__link {
     transition-property: background-color;
     transition-duration: var(--transition-duration);
     transition-timing-function: var(--transition-timing-function);
@@ -87,9 +87,9 @@
     align-items: center;
     width: 44px;
     height: 44px;
+    border-radius: 50%;
     color: var(--secondary-text-color);
     background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
 
     &:hover,
     &:focus {
@@ -97,24 +97,24 @@
     }
 }
 
-.icon-subscrbe {
+.subscrbe-media__icon {
     height: 20px;
     fill: currentColor;
 }
 
 /* Стилизация формы в футебер */
 
-.subscribe-block {
+.subscribe-form {
     display: block;
     width: 570px;
     margin-left: 93px;
 }
 
-.subscribe-form {
+.subscribe-form__block {
     display: flex;
 }
 
-.subscribe-form-input {
+.subscribe-form__input {
     transition-property: border;
     transition-duration: var(--transition-duration);
     transition-timing-function: var(--transition-timing-function);
@@ -136,7 +136,7 @@
     }
 }
 
-.subscribe-form-btn {
+.subscribe-form__btn {
     transition-property: background-color;
     transition-duration: var(--transition-duration);
     transition-timing-function: var(--transition-timing-function);
@@ -169,7 +169,7 @@
     }
 }
 
-.subscribe-form-icon {
+.subscribe-form__icon {
     fill: currentColor;
 }
 

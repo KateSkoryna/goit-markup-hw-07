@@ -3,11 +3,11 @@
     padding-top: 0;
 }
 
-.service-list {
+.service__list {
     display: flex;
 }
 
-.service-list-item {
+.service__item {
     position: relative;
 
     display: flex;
@@ -19,7 +19,7 @@
     }
 }
 
-.service-header {
+.service__header {
     position: absolute;
     z-index: 1;
     display: flex;

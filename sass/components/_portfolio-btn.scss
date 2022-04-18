@@ -1,16 +1,16 @@
 /* Основные кнопки на странице Портфолио */
 
-.portfolio-list {
+.portfolio {
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
 }
 
-.portfolio-list-btn:not(:last-child) {
+.portfolio__item:not(:last-child) {
     margin-right: 8px;
 }
 
-.portfolio-button {
+.portfolio__btn {
     transition-property: color, background-color, border-shadow;
     transition-duration: var(--transition-duration);
     transition-timing-function: var(--transition-timing-function);

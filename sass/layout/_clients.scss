@@ -1,10 +1,10 @@
 /* Стилизация секции партнеры */
 
-.clients-list {
+.clients__list {
     display: flex;
 }
 
-.clients-list-item {
+.clients__item {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,7 +14,7 @@
     }
 }
 
-.clients-list-link {
+.clients__link {
     transition-property: color, border;
     transition-duration: var(--transition-duration);
     transition-timing-function: var(--transition-timing-function);
@@ -35,7 +35,7 @@
     }
 }
 
-.clients-icon {
+.clients__icon {
     fill: currentColor;
 }
 

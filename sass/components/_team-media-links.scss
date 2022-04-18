@@ -1,15 +1,15 @@
 /* Стилизация списка социальных сетей */
 
-.team-media-list {
+.team-media {
     display: flex;
     justify-content: center;
 }
 
-.team-media-item:not(:nth-child(4n)) {
+.team-media__item:not(:nth-child(4n)) {
     margin-right: 10px;
 }
 
-.team-media-link {
+.team-media__link {
     transition-property: color, background-color;
     transition-duration: var(--transition-duration);
     transition-timing-function: var(--transition-timing-function);
@@ -19,9 +19,10 @@
     align-items: center;
     width: 44px;
     height: 44px;
+    border-radius: 50%;
     color: var(--team-icon-color);
     background-color: transparent;
-    border-radius: 50%;
+   
 
     &:hover,
     &:focus {
@@ -30,7 +31,7 @@
     }
 }
 
-.team-media-icon {
+.team-media__icon {
     fill: currentColor;
 }
 
