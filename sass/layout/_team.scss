@@ -1,7 +1,4 @@
 /* Стилизация команды */
-.team {
-    background-color: #f5f4fa;
-}
 
 .team-card {
     display: flex;
@@ -27,7 +24,7 @@
     padding-left: 32px;
 }
 
-.team-discription__header {
+.team-discription__title {
     margin-bottom: 10px;
     color: var(--extra-text-color);
     font-size: 16px;

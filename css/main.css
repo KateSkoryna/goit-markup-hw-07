@@ -79,6 +79,14 @@ img {
   padding-bottom: 94px;
 }
 
+.section--top-zero {
+  padding-top: 0;
+}
+
+.section--other-bg {
+  background-color: #f5f4fa;
+}
+
 .social-media__link_team, .social-media__link_footer {
   width: 44px;
   height: 44px;
@@ -115,7 +123,7 @@ img {
 }
 
 /* Стилизация заголовков секций */
-.section-title {
+.section__title {
   margin-bottom: 50px;
   color: var(--extra-text-color);
   font-size: 36px;
@@ -159,7 +167,7 @@ img {
   border-bottom: 1px solid #ececec;
 }
 
-.header-nav {
+.page-header__container {
   display: flex;
 }
 
@@ -222,7 +230,7 @@ img {
   margin-right: 50px;
 }
 
-.aside__contact {
+.aside__link {
   transition-property: color;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-timing-function);
@@ -236,20 +244,11 @@ img {
   letter-spacing: var(--letter-spacing-extra);
 }
 
-.aside__contact:hover, .aside__contact:focus {
+.aside__link:hover, .aside__link:focus {
   color: var(--acent-color);
 }
 
-.aside__icon-envelope {
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
-  fill: currentColor;
-}
-
-.aside__icon-phone {
-  width: 10px;
-  height: 16px;
+.aside__icon {
   margin-right: 10px;
   fill: currentColor;
 }
@@ -562,7 +561,7 @@ img {
   background-color: #f5f4fa;
 }
 
-.features__header {
+.features__title {
   margin-bottom: 10px;
   color: var(--extra-text-color);
   font-size: 14px;
@@ -596,7 +595,7 @@ img {
   margin-right: 30px;
 }
 
-.service__header {
+.service__title {
   position: absolute;
   z-index: 1;
   display: flex;
@@ -616,10 +615,6 @@ img {
 }
 
 /* Стилизация команды */
-.team {
-  background-color: #f5f4fa;
-}
-
 .team-card {
   display: flex;
 }
@@ -643,7 +638,7 @@ img {
   padding-left: 32px;
 }
 
-.team-discription__header {
+.team-discription__title {
   margin-bottom: 10px;
   color: var(--extra-text-color);
   font-size: 16px;
@@ -699,7 +694,7 @@ img {
 }
 
 /* Стилизация секции партнеры */
-.clients__list {
+.clients {
   display: flex;
 }
 
