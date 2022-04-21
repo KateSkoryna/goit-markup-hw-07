@@ -15,28 +15,28 @@
 <body>
     <!-- Шапка страницы -->
     <header class="page-header">
-        <div class="container header-nav">
+        <div class="page-header__container container">
             <nav class="page-nav">
                 <!--Название с ссылкой-->
-                <a class="logo" href="./index.html">Web<span class="logo_color_dark">Studio</span></a>
+                <a class="logo" href="./index.html">Web<span class="logo--dark">Studio</span></a>
                 <!--Панель навигации-->
                 <ul class="page-nav__list">
-                    <li class="page-nav__item"><a class="page-nav__link " href="./index.html">Студия</a> </li>
-                    <li class="page-nav__item"><a class="page-nav__link currant" href="/">Портфолио</a></li>
+                    <li class="page-nav__item"><a class="page-nav__link page-nav__link--currant" href="/">Студия</a> </li>
+                    <li class="page-nav__item"><a class="page-nav__link " href="./portfolio.html">Портфолио</a></li>
                     <li class="page-nav__item"><a class="page-nav__link" href="#">Контакты</a></li>
                 </ul>
             </nav>
             <!--Контакты с активными ссылками в парвом верхнем углу страницы-->
             <ul class="aside">
                 <li class="aside__item">
-                    <a class="aside__contact" href="mailto:info@devstudio.com">
-                        <svg class="aside__icon-envelope">
+                    <a class="aside__link" href="mailto:info@devstudio.com">
+                        <svg class="aside__icon" width="16" height="12">
                             <use href="./images/icons.svg#envelope"></use>
                         </svg>info@devstudio.com</a>
                 </li>
                 <li class="aside__item">
-                    <a class="aside__contact" href="tel:+380961111111">
-                        <svg class="aside__icon-phone">
+                    <a class="aside__link" href="tel:+380961111111">
+                        <svg class="aside__icon" width="10" height="16">
                             <use href="./images/icons.svg#smartphone"></use>
                         </svg>+38 096 111 11 11</a>
                 </li>
@@ -47,7 +47,7 @@
         <section class="section">
             <div class="container">
                 <!--Скрытый заголовок-->
-                <h1 class="section-title visually-hidden">Портфолио работ компании</h1>
+                <h1 class="section__title visually-hidden">Портфолио работ компании</h1>
                 <!--Кнопки для сортировки-->
                 <ul class="portfolio">
                     <li class="portfolio__item">
@@ -201,7 +201,7 @@
         <div class="container footer-flex">
             <div class="address-block">
                 <!--Название с активной ссылкой-->
-                <a class="logo" href="/">Web<span class="logo_color_light">Studio</span></a>
+                <a class="logo" href="/">Web<span class="logo--light">Studio</span></a>
                 <!--Адресс и Контакты-->
                 <address class="address">
                     <ul class="address__list">
